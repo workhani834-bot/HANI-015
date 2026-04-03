@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LinearSolver {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a, b, c, d, e, f: ");
+        double a = input.nextDouble(), b = input.nextDouble(), c = input.nextDouble();
+        double d = input.nextDouble(), e = input.nextDouble(), f = input.nextDouble();
+
+        double D = (a * d) - (b * c);
+
+        if (D == 0) {
+            System.out.println("The equation has no solution (Denominator is zero).");
+        } else {
+            double x = ((e * d) - (b * f)) / D;
+            double y = ((a * f) - (e * c)) / D;
+            System.out.printf("x is %.2f and y is %.2f\n", x, y);
+        }
+        input.close();
+    }
+}
