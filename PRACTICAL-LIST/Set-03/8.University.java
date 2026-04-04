@@ -1,7 +1,3 @@
-/**
- * Program to demonstrate static members, static blocks, 
- * and instance initialization blocks.
- */
 public class University {
     // Static data members
     private static int totalStudents = 0;
